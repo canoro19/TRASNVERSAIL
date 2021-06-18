@@ -111,10 +111,7 @@ main {
     position: relative;
 }
 
-.nav-links a{
 
-    color:white;
-}
 
 .link-item::after {
     position: absolute;
@@ -434,6 +431,11 @@ p {
 
     .main-logo {
         flex-basis: 30%;
+    }
+
+    .nav-links a{
+
+        color:white;
     }
 
     .main-nav {
