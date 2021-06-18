@@ -111,8 +111,6 @@ main {
     position: relative;
 }
 
-
-
 .link-item::after {
     position: absolute;
     content: "";
@@ -230,8 +228,46 @@ p {
     align-items: center;
 }
 
-.description > img {
-    padding: 2rem;
+.carrousel2 {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 90%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.carrousel2 ul.carrousel-container {
+    display: block;
+}
+.carrousel2 ul.carrousel-container li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.5s, z-index 0.5s;
+}
+
+.carrousel2 ul.carrousel-container li.active,
+.carrousel2 ul.carrousel-container li.initial {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card > img {
     height: 180px;
     width: 180px;
 }
@@ -268,7 +304,6 @@ p {
     width: 100%;
 }
 
-
 .footer > .logo-uni {
     display: flex;
     justify-content: center;
@@ -280,7 +315,6 @@ p {
     object-fit: cover;
 }
 
-
 .footer > .logos {
     width: 100%;
     display: flex;
@@ -291,8 +325,6 @@ p {
     padding-top: 2rem;
 }
 
-
-
 .footer > .logos > img {
     height: 70px;
     width: 70px;
@@ -301,106 +333,106 @@ p {
 
 /////////REDES SOCIALES////////////
 
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-.container-bar{
-	width: 100%;
-	max-width: 50px;
-	position: fixed;
-	left: 0;
-	top: 25%;
+.container-bar {
+    width: 100%;
+    max-width: 50px;
+    position: fixed;
+    left: 0;
+    top: 25%;
 }
-.container-bar a{
-	display: block;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 18px;
-	position: relative;
-	transition: all 500ms ease;
-	color: #fff;
+.container-bar a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: all 500ms ease;
+    color: #fff;
 }
-.container-bar a:hover{
-	background: transparent;
+.container-bar a:hover {
+    background: transparent;
 }
-.container-bar .fa-facebook{
-	background: transparent;
-	border-radius: 0px 5px 0px 0px;
+.container-bar .fa-facebook {
+    background: transparent;
+    border-radius: 0px 5px 0px 0px;
 }
-.container-bar .fa-youtube{
-	background: transparent;
+.container-bar .fa-youtube {
+    background: transparent;
 }
-.container-bar .fa-twitter{
-	background: transparent;
+.container-bar .fa-twitter {
+    background: transparent;
 }
-.container-bar .fa-github{
-	background:transparent;
+.container-bar .fa-github {
+    background: transparent;
 }
-.container-bar .fa-pinterest{
-	background: transparent;
-	border-radius: 0px 0px 5px 0px;
+.container-bar .fa-pinterest {
+    background: transparent;
+    border-radius: 0px 0px 5px 0px;
 }
-.container-bar #title{
-	position: absolute;
-	background: #1c1c1c;
-	padding: 0px 8px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	border-radius: 3px;
-	font-size: 15px;
-	top:12px; left: 0px;
-	transition: all 500ms ease;
-	opacity: 0;
-	visibility: hidden;
-	z-index: -1;
+.container-bar #title {
+    position: absolute;
+    background: #1c1c1c;
+    padding: 0px 8px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 15px;
+    top: 12px;
+    left: 0px;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
 }
-.container-bar a:hover #title{
-	opacity: 1;
-	visibility: visible;
-	left: 64px;
+.container-bar a:hover #title {
+    opacity: 1;
+    visibility: visible;
+    left: 64px;
 }
-.container-bar #title:after{
-	position: absolute;
-	content: '';
-	border-left: 7px solid transparent;
-	border-right: 6px solid #1c1c1c;
-	border-top: 7px solid transparent;
-	border-bottom: 7px solid transparent;
-	right: 100%;
-	top: 8px;
+.container-bar #title:after {
+    position: absolute;
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 6px solid #1c1c1c;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    right: 100%;
+    top: 8px;
 }
-#btn-social{
-	display: none;
+#btn-social {
+    display: none;
 }
-.fa-play{
-	cursor: pointer;
-	transition: all 0.4s;
-	font-size: 12px;
-	margin-bottom: 5px;
-	display: inline-block;
-	transform: rotate(180deg);
-	color: #49b0e6;
+.fa-play {
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: inline-block;
+    transform: rotate(180deg);
+    color: #49b0e6;
 }
-#btn-social:checked ~ .fa-play{
-	transform: rotate(0deg);
+#btn-social:checked ~ .fa-play {
+    transform: rotate(0deg);
 }
-.icon-social{
-	transition: all 0.4s;
-	transform: translateX(0%);
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+.icon-social {
+    transition: all 0.4s;
+    transform: translateX(0%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
-#btn-social:checked ~ .icon-social{
-	transform: translateX(-100%);
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
+#btn-social:checked ~ .icon-social {
+    transform: translateX(-100%);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0);
 }
-
 
 @media screen and (min-width: 768px) {
     .small-logo {
@@ -433,9 +465,8 @@ p {
         flex-basis: 30%;
     }
 
-    .nav-links a{
-
-        color:white;
+    .nav-links a {
+        color: white;
     }
 
     .main-nav {

@@ -34,3 +34,26 @@ window.addEventListener("scroll", function (evt) {
         }
     }
 })
+
+/* Carrousel */
+
+let carrousel = document.getElementsByClassName("carrousel-item")
+let length = carrousel.length
+let slide = 0
+
+setInterval(() => {
+    console.log(slide)
+    if (slide >= 0 && slide < length - 1) {
+        carrousel[slide].className = "carrousel-item" + " active"
+        setTimeout(() => {
+            carrousel[slide].className = "carrousel-item"
+            slide++
+        }, 2000)
+    } else {
+        carrousel[slide].className = "carrousel-item" + " active"
+        setTimeout(() => {
+            carrousel[slide].className = "carrousel-item"
+            slide = 0
+        }, 2000)
+    }
+}, 2500)
