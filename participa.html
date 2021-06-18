@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MERCATAGROECOLOGIC</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="participa.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div>
+            <a class="main-logo" href="/">
+                <img src="LOGOS/Logo_Mercat_.png" alt="logo" />
+            </a>
+        </div>
+        <nav id="nav" class="main-nav">
+            <div class="nav-links">
+                <a class="link-item" href="./index.html">Inici</a>
+                <a class="link-item" href="./index.html#description">Principi</a>
+                <a class="link-item" href="/participa.html">Participa</a>
+                <a class="link-item" href="./contacte.html">Contacte</a>
+            </div>
+        </nav>
+        <div class="small-logo">
+            <img src="LOGOS/Logo_Cistella_.png" alt="logo" />
+        </div>
+
+
+    </header>
+    <main>
+        <section class="landing">
+            <!-- <img src="LOGOS/som mercat.png" alt="logo" /> -->
+            <video id="video" autoplay loop muted>
+                <source src="./videos/principiosanimados.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="description">
+            <p>
+                El CCD i la resta d’entitats col·laboradores obrin durant l’època estival un procés de selecció per a
+                cobrir els llocs disponibles en el Mercat.
+                La selecció posterior es fa tenint en compte els criteris següents:
+            </p>
+            <p>
+            <ul>
+                <li> – Els projectes han de tenir productes agraris/elaborats avalats amb segell de sistemes
+                    participatius de
+                    garantia (SPG) o CAECV. </li>
+                <li> – Els productes oferits han de ser de proximitat i temporada, per a afavorir les varietats locals i
+                    tradicionals. Tenen prioritat les iniciatives més pròximes al campus. </li>
+
+                <li> – Es valora que les persones productores siguen les que participen directament en el Mercat. </li>
+
+                <li> – Es valoren projectes xicotets impulsats per joves del sector agrari, i els que integren el sector
+                    de
+                    la població en risc d’exclusió social i/o econòmica. </li>
+
+                <li> – Es valoren projectes que afavorisquen l’economia local i social (sobirania alimentària).</li>
+
+                <li>– Es valoren les iniciatives que hagen participat amb anterioritat en mercats UPV o en el Grup de
+                    Consum
+                    Vera. </li>
+
+            </ul>
+            </p>
+
+            <p>
+                En l’actualitat, el Mercat té un contingent de llocs per tipus de producte: verdures i fruites (2),
+                conserves (1), pa (1), formatges i lactis (1), fruita seca (1), mel (1), llegums (1), cosmètica (1) i
+                comerç just o artesania (1). Tots ells estan assignats per al curs 2019 i 2020, entenent que la
+                continuïtat de les experiències és fonamental per a consolidar la relació entre persones consumidores i
+                productores.
+            </p>
+
+            <p>
+
+                Completa el formulari amb la informació del teu projecte agroecològic. Així podrem tenir-te en compte
+                quan el Mercat cresca.
+
+
+            </p>
+        </section>
+        <section class="form">
+            <form action="">
+                <div class="form-container">
+                    <div class="form-column">
+                        <div>
+                            <label for="nameProject">Nom del projecte que participaria en el Mercat</label>
+                            <input type="text" name="nameProject" id="nameProject">
+                        </div>
+                        <div>
+                            <label for="PersonContact">Persona de Contacte</label>
+                            <input type="text" name="PersonContact" id="PersonContact">
+                        </div>
+                        <div>
+                            <label for="productType">Tipus de productes</label>
+                            <input type="text" name="productType" id="productType">
+                            <p><small>Indica quins productes aportaries al Mercat</small></p>
+                        </div>
+                        <div>
+                            <label for="certificateType">Tipus de certificació del projecte</label>
+                            <select name="certificateType" id="certificateType">
+                                <option value="segell">Segell</option>
+                                <option value="segellEcologic">SegellEcologic</option>
+                                <option value="other">Otros</option>
+                            </select>
+                            <p><small>Indica como certificas tu producción</small></p>
+                        </div>
+
+                    </div>
+                    <div class="form-column">
+                        <div>
+                            <label for="originPlace">Lloc de procedència </label>
+                            <input type="text" name="originPlace" id="originPlace">
+                            <p><small>Per a nosaltres és important que la producció siga KM 0</small></p>
+                        </div>
+                        <div>
+                            <label for="phonenumber">Número de telèfon</label>
+                            <input type="tel" name="phonenumber" id="phonenumber">
+                        </div>
+                        <div>
+                            <label for="email">Correu electrònic</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="observations">Observacions</label>
+                            <textarea name="observations" id="observations" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="logo-uni">
+            <img src="assets/img/marca_UPV_principal_blanco300.png" alt="UPV">
+        </div>
+        <div class="logos">
+            <img src="assets/footer/spge.png" alt="spge">
+            <img src="assets/footer/cerai.png" alt="cerai">
+            <img src="assets/footer/eamn.png" alt="eamn">
+            <img src="assets/footer/xarxa.png" alt="xarxa">
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

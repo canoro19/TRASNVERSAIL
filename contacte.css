@@ -1,0 +1,95 @@
+/* ----------AQUI DEFINIR COLORES POR SECCION PARA LA ANIMACION----------- */
+.color-form {
+    background: var(--orange-color);
+}
+.color-form button span {
+    background: white;
+}
+.color-description {
+    background: var(--green-color);
+}
+/* --------------------- */
+.description {
+    padding: 1rem;
+    height: 100%;
+}
+
+.description > p {
+    text-align: justify;
+    /* padding: 1.4rem; */
+    color: white;
+}
+
+main {
+    margin-top: 100px;
+}
+
+.form {
+    align-items: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form .form-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.form .form-column label {
+    display: block;
+    color: white;
+    font-size: 1rem;
+}
+.form .form-column input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.6rem;
+    padding: 0.5rem 0rem;
+    color: gray;
+    border: darkgray solid 2px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .description {
+        padding: 4rem;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .form .form-column > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1.3rem 1rem;
+    }
+
+    .form .form-column label {
+        font-size: 1.2rem;
+    }
+    .form .form-column input,
+    select,
+    textarea {
+        font-size: 1rem;
+    }
+
+    main {
+        margin-top: 0px;
+    }
+}
