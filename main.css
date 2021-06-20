@@ -257,7 +257,7 @@ p {
 .carousel ul.carousel-buttons-container > .carousel-button {
     display: flex;
     position: relative;
-    padding: 0 10%;
+    padding: 0 3%;
     align-items: center;
     justify-content: center;
 }
@@ -438,7 +438,7 @@ p {
     transform: rotate(180deg);
     color: white;
 }
-#btn-social:checked ~ .fa share-alt {
+#btn-social:checked ~ .fa-share-alt {
     transform: rotate(0deg);
 }
 .icon-social {
