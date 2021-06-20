@@ -57,3 +57,5 @@ setInterval(() => {
         }, 2000)
     }
 }, 2500)
+
+/*Carrusel 2*/

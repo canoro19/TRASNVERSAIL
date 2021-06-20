@@ -1,4 +1,4 @@
-/* estilos generales */
+/* Estilos generales */
 
 :root {
     --green-color: #3dc167;
@@ -28,8 +28,8 @@
     object-fit: cover;
 }
 body {
-    background: var(--light-orange-color);
-    transition: background 1s ease;
+    /* background: var(--aqua-color); */
+    transition: background 1s ease; /*POSIBLE ERROR EN TRASICION*/
 }
 .color-landing {
     /* background: var(--light-orange-color); */
@@ -58,14 +58,18 @@ body {
     align-items: center;
     justify-content: center;
 }
-/* para que el menu se */
+
+
+/* Header */
+
+
 main {
     /* margin-top: 100px; */
     margin-top: 0;
 }
 
 .main-header {
-    /* background-color: var(--light-orange-color); */
+    /* background-color: var(--aqua-color); */
     position: fixed;
     top: 0;
     left: 0;
@@ -78,7 +82,10 @@ main {
     z-index: 100;
 }
 
+/*Navegador*/
+
 .main-nav {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -144,7 +151,7 @@ main {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #444444;
+    background: white; /*se cambia color de barras de menu*/
     border-radius: 3px;
     transform-origin: 4px 0px;
     transition: all 0.2s linear;
@@ -180,7 +187,7 @@ main {
     object-fit: cover;
 }
 
-/* video de prueba  */
+
 
 .carrousel {
     display: flex;
@@ -228,7 +235,11 @@ p {
     align-items: center;
 }
 
-.carrousel2 {
+
+ /* estilo carrusel2  */
+
+
+ .carrousel2 {
     display: flex;
     justify-content: center;
     width: 95%;
@@ -268,10 +279,15 @@ p {
     justify-content: center;
 }
 .card > img {
-    height: 180px;
-    width: 180px;
+    height: 300px;
+    width: 300px;
+    
 }
 
+
+
+
+ 
 .features {
     /* background-color: var(--green-color); */
     display: flex;
@@ -331,7 +347,12 @@ p {
     object-fit: cover;
 }
 
-/////////REDES SOCIALES////////////
+/* carrusel 3  */
+
+
+
+
+/* /////////REDES SOCIALES//////////// */
 
  {
     margin: 0;
@@ -371,10 +392,10 @@ p {
 .container-bar .fa-twitter {
     background: transparent;
 }
-.container-bar .fa-github {
+.container-bar .fa-linkedin {
     background: transparent;
 }
-.container-bar .fa-pinterest {
+.container-bar .fa-instagram {
     background: transparent;
     border-radius: 0px 0px 5px 0px;
 }
@@ -412,16 +433,17 @@ p {
 #btn-social {
     display: none;
 }
-.fa-play {
+.fa-share-alt {
     cursor: pointer;
     transition: all 0.4s;
     font-size: 12px;
     margin-bottom: 5px;
     display: inline-block;
     transform: rotate(180deg);
-    color: white;
+    color:white;
+    
 }
-#btn-social:checked ~ .fa-play {
+#btn-social:checked ~ .fa share-alt {
     transform: rotate(0deg);
 }
 .icon-social {
@@ -464,9 +486,13 @@ p {
     .main-logo {
         flex-basis: 30%;
     }
-
+    
     .nav-links a {
-        color: white;
+        color:white;
+        
+        
+
+    
     }
 
     .main-nav {
@@ -477,6 +503,7 @@ p {
         margin: 0;
         padding: 1rem 0;
         height: 100%;
+        
     }
 
     .nav-links {
@@ -511,7 +538,7 @@ p {
         align-items: center;
         padding: 1rem;
     }
-
+    
     .landing,
     .description,
     .features,

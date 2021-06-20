@@ -28,7 +28,7 @@
         <nav id="nav" class="main-nav">
             <div class="nav-links">
                 <a class="link-item" href="./index.html">Inici</a>
-                <a class="link-item" href="./index.html#description">Principi</a>
+                <!-- <a class="link-item" href="./index.html#description">Principi</a> -->
                 <a class="link-item" href="/participa.html">Participa</a>
                 <a class="link-item" href="./contacte.html">Contacte</a>
             </div>
@@ -81,15 +81,15 @@
                 comerç just o artesania (1). Tots ells estan assignats per al curs 2019 i 2020, entenent que la
                 continuïtat de les experiències és fonamental per a consolidar la relació entre persones consumidores i
                 productores.
-            </p>
+            </p><br><br>
 
-            <p>
+            <h2>
 
                 Completa el formulari amb la informació del teu projecte agroecològic. Així podrem tenir-te en compte
                 quan el Mercat cresca.
 
 
-            </p>
+            </h2>
         </section>
         <section class="form">
             <form action="">
@@ -98,47 +98,48 @@
                         <div>
                             <label for="nameProject">Nom del projecte que participaria en el Mercat</label>
                             <input type="text" name="nameProject" id="nameProject">
-                        </div>
+                        </div><br>
                         <div>
                             <label for="PersonContact">Persona de Contacte</label>
                             <input type="text" name="PersonContact" id="PersonContact">
-                        </div>
+                        </div><br>
                         <div>
                             <label for="productType">Tipus de productes</label>
-                            <input type="text" name="productType" id="productType">
-                            <p><small>Indica quins productes aportaries al Mercat</small></p>
-                        </div>
+                            <input type="text" name="productType" id="productType " placeholder="Indica quins productes aportaries al Mercat">
+                            <!-- <p><small>Indica quins productes aportaries al Mercat</small></p> -->
+                        </div><br>
                         <div>
                             <label for="certificateType">Tipus de certificació del projecte</label>
                             <select name="certificateType" id="certificateType">
+                                <option value="" disabled="disabled">Indica como certificas tu producción</option>
                                 <option value="segell">Segell</option>
                                 <option value="segellEcologic">SegellEcologic</option>
                                 <option value="other">Otros</option>
                             </select>
-                            <p><small>Indica como certificas tu producción</small></p>
-                        </div>
+                            
+                        </div><br>
 
-                    </div>
+                    </div><br>
                     <div class="form-column">
                         <div>
                             <label for="originPlace">Lloc de procedència </label>
-                            <input type="text" name="originPlace" id="originPlace">
-                            <p><small>Per a nosaltres és important que la producció siga KM 0</small></p>
-                        </div>
+                            <input type="text" name="originPlace" id="originPlace" placeholder="Per a nosaltres és important que la producció siga KM 0">
+                            <!-- <p><small>Per a nosaltres és important que la producció siga KM 0</small></p> -->
+                        </div><br>
                         <div>
                             <label for="phonenumber">Número de telèfon</label>
                             <input type="tel" name="phonenumber" id="phonenumber">
-                        </div>
+                        </div><br>
                         <div>
                             <label for="email">Correu electrònic</label>
                             <input type="email" name="email" id="email">
-                        </div>
+                        </div><br>
                         <div>
                             <label for="observations">Observacions</label>
                             <textarea name="observations" id="observations" cols="30" rows="5"></textarea>
-                        </div>
+                        </div><br>
                     </div>
-                </div>
+                </div><br>
                 <input type="submit" value="Enviar">
             </form>
         </section>
