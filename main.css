@@ -27,31 +27,18 @@
     width: 40px;
     object-fit: cover;
 }
+/* body por defecto color aqua
+    header en movil por defecto transparente y en escritorio por defecto aqua
+*/
 body {
-    /* background: var(--aqua-color); */
+    background: var(--aqua-color);
     transition: background 1s ease; /*POSIBLE ERROR EN TRASICION*/
-}
-.color-landing {
-    /* background: var(--light-orange-color); */
-    background: transparent;
-}
-.color-carrousel {
-    background: var(--orange-color);
-}
-.color-description {
-    background: var(--purple-color);
-}
-.color-description button span {
-    background: white;
-}
-.color-features {
-    background: var(--green-color);
 }
 
 .landing,
 .description,
 .features,
-.carrousel,
+.info,
 .form {
     display: flex;
     height: 100vh;
@@ -59,9 +46,7 @@ body {
     justify-content: center;
 }
 
-
 /* Header */
-
 
 main {
     /* margin-top: 100px; */
@@ -69,7 +54,7 @@ main {
 }
 
 .main-header {
-    /* background-color: var(--aqua-color); */
+    background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
@@ -187,15 +172,13 @@ main {
     object-fit: cover;
 }
 
-
-
-.carrousel {
+.info {
     display: flex;
     flex-direction: column;
     /* height: 400px; */
 }
 
-.carrousel > .carrousel-element-container {
+.info > .info-element-container {
     /* background-color: var(--orange-color); */
     /* background: linear-gradient(180deg, var(--orange-color) 79%, var(--aqua-color) 99%); */
     border-bottom-color: var(--purple-color);
@@ -207,25 +190,17 @@ main {
     padding: 1rem;
 }
 
-.carrousel > .carrousel-element-container.background-2 {
-    /* background: linear-gradient(180deg, var(--aqua-color) 79%, var(--purple-color) 99%); */
-}
-
-.carrousel > .carrousel-element-container.background-3 {
-    /* background: var(--green-color); */
-}
-
-.carrousel > .carrousel-element-container > img {
+.info > .info-element-container > img {
     height: 150px;
     width: 120;
 }
 
-.carrousel > .carrousel-element-container > h2,
+.info > .info-element-container > h2,
 p {
     color: #ffffff;
     text-align: center;
 }
-.carrousel > .carrousel-element-container > h2 {
+.info > .info-element-container > h2 {
     text-align: center;
 }
 
@@ -235,11 +210,9 @@ p {
     align-items: center;
 }
 
+/* estilo carrusel2  */
 
- /* estilo carrusel2  */
-
-
- .carrousel2 {
+.carousel {
     display: flex;
     justify-content: center;
     width: 95%;
@@ -249,10 +222,10 @@ p {
     position: relative;
 }
 
-.carrousel2 ul.carrousel-container {
+.carousel ul.carousel-container {
     display: block;
 }
-.carrousel2 ul.carrousel-container li {
+.carousel ul.carousel-container li {
     width: 100%;
     height: 100%;
     list-style: none;
@@ -263,13 +236,50 @@ p {
     transition: opacity 0.5s, z-index 0.5s;
 }
 
-.carrousel2 ul.carrousel-container li.active,
-.carrousel2 ul.carrousel-container li.initial {
+.carousel ul.carousel-container li.active,
+.carousel ul.carousel-container li.initial {
     opacity: 1;
     position: relative;
-    z-index: 900;
+    z-index: 2;
 }
 
+.carousel ul.carousel-buttons-container {
+    position: absolute;
+    margin: auto;
+    bottom: 5%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.carousel ul.carousel-buttons-container > .carousel-button {
+    display: flex;
+    position: relative;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: center;
+}
+.carousel ul.carousel-buttons-container > .carousel-button :hover {
+    cursor: pointer;
+}
+
+.carousel ul.carousel-buttons-container > .carousel-button > .button {
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: white;
+    color: white;
+    transition: background 200ms ease;
+    cursor: pointer;
+}
+.carousel ul.carousel-buttons-container > .carousel-button > .button:hover {
+    cursor: pointer;
+}
+.carousel ul.carousel-buttons-container > .carousel-button > .button.active {
+    background: rgb(54, 54, 54);
+}
 .card {
     height: 100%;
     width: 100%;
@@ -281,13 +291,8 @@ p {
 .card > img {
     height: 300px;
     width: 300px;
-    
 }
 
-
-
-
- 
 .features {
     /* background-color: var(--green-color); */
     display: flex;
@@ -349,17 +354,8 @@ p {
 
 /* carrusel 3  */
 
-
-
-
 /* /////////REDES SOCIALES//////////// */
 
- {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
 .container-bar {
     width: 100%;
     max-width: 50px;
@@ -440,8 +436,7 @@ p {
     margin-bottom: 5px;
     display: inline-block;
     transform: rotate(180deg);
-    color:white;
-    
+    color: white;
 }
 #btn-social:checked ~ .fa share-alt {
     transform: rotate(0deg);
@@ -456,6 +451,23 @@ p {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0);
 }
 
+/* Clases de colores para la secciones en el scroll */
+.color-landing {
+    background: transparent;
+}
+.color-info {
+    background: var(--orange-color);
+}
+.color-description {
+    background: var(--purple-color);
+}
+.color-description button span {
+    background: white;
+}
+.color-features {
+    background: var(--green-color);
+}
+
 @media screen and (min-width: 768px) {
     .small-logo {
         position: absolute;
@@ -467,11 +479,12 @@ p {
         margin-top: 0;
     }
     .color-landing {
-        background: var(--light-orange-color);
+        background: var(--aqua-color);
         /* background: transparent; */
     }
 
     .main-header {
+        background: var(--aqua-color);
         position: relative;
         padding-top: 2rem;
         display: flex;
@@ -483,16 +496,8 @@ p {
         display: none;
     }
 
-    .main-logo {
-        flex-basis: 30%;
-    }
-    
     .nav-links a {
-        color:white;
-        
-        
-
-    
+        color: white;
     }
 
     .main-nav {
@@ -503,7 +508,6 @@ p {
         margin: 0;
         padding: 1rem 0;
         height: 100%;
-        
     }
 
     .nav-links {
@@ -519,17 +523,18 @@ p {
         display: inline-block;
         margin-top: 0;
         margin-right: 2rem;
+        margin-left: 2rem;
     }
     .landing > video {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
-    .carrousel {
+    .info {
         flex-direction: row;
         height: 400px;
     }
-    .carrousel > .carrousel-element-container {
+    .info > .info-element-container {
         border-bottom-color: var(--purple-color);
         display: flex;
         flex-grow: 1;
@@ -538,11 +543,11 @@ p {
         align-items: center;
         padding: 1rem;
     }
-    
+
     .landing,
     .description,
     .features,
-    .carrousel {
+    .info {
         height: 100vh;
     }
 }

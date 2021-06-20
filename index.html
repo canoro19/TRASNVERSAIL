@@ -46,121 +46,102 @@
                 <source src="./videos/principal.mp4" type="video/mp4">
             </video>
         </section>
-        <section class="carrousel">
-            <div class="carrousel-element-container">
+        <section class="info">
+            <div class="info-element-container">
                 <img src="./assets/img/reloj.png" alt="breakfast" />
                 <h2>Quan?</h2>
                 <p>
                     Tots els dijous del mes <br> de 9.30 a 14.00 hores
                 </p>
             </div>
-            <div class="carrousel-element-container background-2">
+            <div class="info-element-container background-2">
                 <img src="./assets/img/aguacate.png" alt="Chef" />
                 <h2>On?</h2>
                 <p>
                     A l’Àgora del campus <br> de Vera de la UPV
                 </p>
             </div>
-            <!-- <div class="carrousel-element-container background-3">
-                <img src="assets/img/undraw_Hamburger_8ge6.svg" alt="Chef" />
-                <h2>On?</h2>
-                <p>
-                    A l’Àgora del campus de Vera de la UPV
-                </p>
-            </div> -->
         </section>
         <section class="description" id="description">
-            <div class="carrousel2">
-                <ul class="carrousel-container">
-                    <li class="carrousel-item initial" id="item-1">
-                        <div class="slogan">
-                
-                        </div>
-                        <div class="card">
-                    
-                            <img src="./assets/esloganes/mercat.png" alt="mercat">
-                            <p>Neque porro quisquam est qui<br> ipsum quia dolor sit amet, <br>consectetur, adipisci
-                                velit...</p>
-                        </div>
-                    </li>
-                    <li class="carrousel-item" id="item-2">
-                        <div class="card">
-                            <img src="./assets/esloganes/frescos.png" alt="frescos" />
-                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                velit...</p>
-                        </div>
-                    </li>
-                    <li class="carrousel-item" id="item-3">
-                        <div class="card">
-                            <img src="./assets/esloganes/sabors.png" alt="sabors" />
-                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                velit...</p>
-                        </div>
-                    </li>
-                    <li class="carrousel-item" id="item-4">
+            <div class="carousel" id="carousel-1">
+                <ul class="carousel-container">
+                    <li class="carousel-item initial" id="item-1">
                         <div class="card">
                             <img src="./assets/esloganes/eco.png" alt="eco" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
                                 velit...</p>
                         </div>
                     </li>
-                    <li class="carrousel-item" id="item-5">
+                    <li class="carousel-item" id="item-2">
                         <div class="card">
-                            <img src="./assets/esloganes/km0.png" alt="km0" />
+                            <img src="./assets/esloganes/frescos.png" alt="eco" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
                                 velit...</p>
                         </div>
                     </li>
-                    <li class="carrousel-item" id="item-6">
+                    <li class="carousel-item" id="item-3">
                         <div class="card">
-                            <img src="./assets/esloganes/upv.png" alt="upv" />
+                            <img src="./assets/esloganes/km0.png" alt="eco" />
+                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                                velit...</p>
+                        </div>
+                    </li>
+                    <li class="carousel-item" id="item-4">
+                        <div class="card">
+                            <img src="./assets/esloganes/mercat.png" alt="eco" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
                                 velit...</p>
                         </div>
                     </li>
                 </ul>
+                <ul class="carousel-buttons-container">
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide1(0)"></span></li>
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide1(1)"></span></li>
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide1(2)"></span></li>
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide1(3)"></span></li>
+                </ul>
             </div>
 
         </section>
-        <!-- <section class="features" id="features">
-            <div class="carrousel3">
-                <ul class="carrousel-container">
-                    <li class="carrousel2-item initial" id="item-1">
+        <section class="features" id="features">
+            <div class="carousel" id="carousel-2">
+                <ul class="carousel-container">
+                    <li class="carousel-item initial" id="item-1">
                         <div class="card">
                             <img src="./assets/esloganes/mercat.png" alt="mercat" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
                                 velit...</p>
                         </div>
                     </li>
-                    <li class="carrousel-item" id="item-2">
+                    <li class="carousel-item" id="item-2">
                         <div class="card">
                             <img src="./assets/esloganes/frescos.png" alt="frescos" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
                                 velit...</p>
                         </div>
                     </li>
-                    <li class="carrousel-item" id="item-3">
+                    <li class="carousel-item" id="item-3">
                         <div class="card">
                             <img src="./assets/esloganes/sabors.png" alt="sabors" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
                                 velit...</p>
                         </div>
                     </li>
-                    <li class="carrousel-item" id="item-4">
+                    <li class="carousel-item" id="item-4">
                         <div class="card">
                             <img src="./assets/esloganes/eco.png" alt="eco" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
                                 velit...</p>
                         </div>
                     </li>
-                    <li class="carrousel-item" id="item-4">
+                    <li class="carousel-item" id="item-4">
                         <div class="card">
                             <img src="./assets/esloganes/km0.png" alt="km0" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
                                 velit...</p>
                         </div>
                     </li>
-                    <li class="carrousel-item" id="item-4">
+                    <li class="carousel-item" id="item-4">
                         <div class="card">
                             <img src="./assets/esloganes/upv.png" alt="upv" />
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
@@ -168,14 +149,22 @@
                         </div>
                     </li>
                 </ul>
-            </div> -->
+                <ul class="carousel-buttons-container">
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide2(0)"></span></li>
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide2(1)"></span></li>
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide2(2)"></span></li>
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide2(3)"></span></li>
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide2(4)"></span></li>
+                    <li class="carousel-button"><span class="button" role="button" onclick="showSlide2(5)"></span></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <div class="logo-uni">
             <img src="assets/img/marca_UPV_principal_blanco300.png" alt="UPV">
         </div>
-       
+
         <div class="container-bar">
             <input type="checkbox" id="btn-social">
             <label for="btn-social" class="fa fa-share-alt"></label>

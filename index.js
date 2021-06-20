@@ -25,37 +25,79 @@ window.addEventListener("scroll", function (evt) {
     // console.log("scroll:", scroll)
 
     for (let section of sections) {
+        // if (section.className !== "landing") {
         let currentHeight = parseFloat(this.getComputedStyle(section, null).height.replace("px", ""))
         // console.log("currentHeight: ", currentHeight)
-        // console.log(section.className, section.offsetTop)
         if (section.offsetTop <= scroll && section.offsetTop + currentHeight > scroll) {
             body.className = "color-" + section.className
             document.getElementsByTagName("header")[0].className = "main-header color-" + section.className
         }
+        // }
+        // comentar lineas de abajo si no les gusta como queda
+        // else {
+        //     body.className = "color-" + section.className
+        //     document.getElementsByTagName("header")[0].className = "main-header"
+        // }
     }
 })
 
-/* Carrousel */
+/* carousel 1*/
 
-let carrousel = document.getElementsByClassName("carrousel-item")
-let length = carrousel.length
-let slide = 0
+let carousel1 = document.getElementById("carousel-1")
+let slides1 = carousel1.children[0].children
+let buttons1 = carousel1.querySelectorAll(".carousel-button > .button")
+let length1 = slides1.length
+let presenter1 = startAutoMode(0, slides1, buttons1)
 
-setInterval(() => {
-    console.log(slide)
-    if (slide >= 0 && slide < length - 1) {
-        carrousel[slide].className = "carrousel-item" + " active"
-        setTimeout(() => {
-            carrousel[slide].className = "carrousel-item"
-            slide++
-        }, 2000)
-    } else {
-        carrousel[slide].className = "carrousel-item" + " active"
-        setTimeout(() => {
-            carrousel[slide].className = "carrousel-item"
-            slide = 0
-        }, 2000)
+function showSlide1(index) {
+    clearInterval(presenter1)
+    for (slide of slides1) {
+        slide.className = "carousel-item"
     }
-}, 2500)
+    for (button of buttons1) {
+        button.className = "button"
+    }
+    slides1[index].className = "carousel-item" + " active"
+    buttons1[index].className = "button active"
+    presenter1 = startAutoMode(index, slides1, buttons1)
+}
+
+/* carousel 2*/
+
+let carousel2 = document.getElementById("carousel-2")
+let slides2 = carousel2.children[0].children
+let buttons2 = carousel2.querySelectorAll(".carousel-button > .button")
+let length2 = slides2.length
+let presenter2 = startAutoMode(0, slides2, buttons2)
+
+function showSlide2(index) {
+    clearInterval(presenter2)
+    for (slide of slides2) {
+        slide.className = "carousel-item"
+    }
+    for (button of buttons2) {
+        button.className = "button"
+    }
+    slides2[index].className = "carousel-item" + " active"
+    buttons2[index].className = "button active"
+    presenter2 = startAutoMode(index, slides2, buttons2)
+}
+
+function startAutoMode(slideIndex, slides, buttons) {
+    slideIndex = slideIndex || 0
+    return setInterval(() => {
+        slides[slideIndex].className = "carousel-item" + " active"
+        buttons[slideIndex].className = "button active"
+        setTimeout(() => {
+            slides[slideIndex].className = "carousel-item"
+            buttons[slideIndex].className = "button "
+            if (slideIndex >= 0 && slideIndex < slides.length - 1) {
+                slideIndex++
+            } else {
+                slideIndex = 0
+            }
+        }, 2000)
+    }, 2100)
+}
 
 /*Carrusel 2*/
